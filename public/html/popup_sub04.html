@@ -1,0 +1,494 @@
+
+<!doctype html>
+<html lang="ko" class="root-text-sm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="Author" content="EZV">
+<meta name="Keywords" content="EZV">
+<meta name="description" content="EZV">
+<title>EZV</title>
+<link rel="icon" href="/assets/image/favicon.ico">
+<link type="text/css" rel="stylesheet" href="/assets/css/slick.css">
+<link type="text/css" rel="stylesheet" href="/assets/css/jquery-ui.min.css">
+<!-- <link type="text/css" rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
+<link type="text/css" rel="stylesheet" href="/assets/css/common.css">
+<script type="text/javascript" src="/assets/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/slick.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript" src="/assets/js/common.js"></script>
+</head>
+<body>
+    <div class="popup-wrap win-popup-wrap type1">
+        <div class="popup-contents">
+            <div class="popup-tit-wrap">
+                <h3 class="popup-tit">Setting</h3>
+            </div>
+            <div class="popup-conbox">
+                <p>
+                    타이틀 부분에 마우스를 올리면 기능 설명이 보여집니다.
+                </p>
+                <div class="write-form-wrap mt-10">
+                    <form action="" method="">
+                        <fieldset>
+                            <legend class="hide">등록</legend>
+                            <div class="table-wrap">
+                                <table class="cst-table">
+                                    <caption class="hide">등록</caption>
+                                    <colgroup>
+                                        <col style="width: 20%;">
+                                        <col>
+                                        <col style="width: 20%;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">프로그램 상단 <br>(직접 소스 코딩)</th>
+                                            <td class="text-left" colspan="3">
+                                                <textarea name="" id="" class="form-item" rows="3"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-pink">Chair</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <input type="text" class="form-item">
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                            <th scope="row" class="bg-pink">Panel</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <input type="text" class="form-item">
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-pink">Discusser</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <input type="text" class="form-item">
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                            <th scope="row" class="bg-pink">etc_faculty</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">사용</option>
+                                                    </select>
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-pink">Speaker</th>
+                                            <td class="text-left">
+                                                <input type="text" name="" id="" class="form-item">
+                                            </td>
+                                            <th scope="row" class="bg-pink">etc_speaker</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">사용</option>
+                                                    </select>
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-pink">etc_speaker <br>(faculty 연동)</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <input type="text" class="form-item">
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                            <th scope="row" class="bg-pink">etc_speaker <br>(faculty 연동)</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">사용</option>
+                                                    </select>
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-yellow">카테고리 <br>노출 타입</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">카테고리 1 + 카테고리 2</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-yellow">카테고리 <br>텍스트 노출</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">기본</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">카테고리 1 <br>대분류</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">사용</option>
+                                                    </select>
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                            <th scope="row">카테고리 2 <br>소스</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">사용</option>
+                                                    </select>
+                                                    <input type="text" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">하단 메뉴</th>
+                                            <td class="text-left" colspan="3">
+                                                <div class="checkbox-wrap cst">
+                                                    <label for="chk1_1" class="checkbox-group"><input type="checkbox" name="" id="chk1_1">NOW</label>
+                                                    <label for="chk1_2" class="checkbox-group"><input type="checkbox" name="" id="chk1_2">Program</label>
+                                                    <label for="chk1_3" class="checkbox-group"><input type="checkbox" name="" id="chk1_3">Glance</label>
+                                                    <label for="chk1_4" class="checkbox-group"><input type="checkbox" name="" id="chk1_4">Myfav</label>
+                                                    <label for="chk1_5" class="checkbox-group"><input type="checkbox" name="" id="chk1_5">Category</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">세션 제목</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">사용</option>
+                                                    </select>
+                                                    <input type="text" name="" id="" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                            <th scope="row" class="bg-blue">세션 Sub 제목</th>
+                                            <td class="text-left">
+                                                <div class="form-group n2">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">사용</option>
+                                                    </select>
+                                                    <input type="text" name="" id="" class="form-item w-30p">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">세션 제목 표시방법</th>
+                                            <td class="text-left" colspan="3">
+                                                <div class="form-group n3">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">기본(세션제목 + 세션 Sub 제목)</option>
+                                                    </select>
+                                                    <input type="text" name="" class="form-item" placeholder="직접입력시 사용">
+                                                    <select name="" id="" class="form-item w-30p">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">강의 제목</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-blue">강의평가 <br>타입</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용(버튼)</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">abs_sid</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-blue">abs_no</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용(버튼)</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">메모(버튼)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-blue">메모 타입</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">기본</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">좋아요(버튼)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-blue">서브(강의) <br>즐겨찾기(버튼)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">10분전 <br>알람기능(버튼)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-blue">연자정보(버튼)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">세션 Q&A <br>(버튼)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">미사용</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-blue">세션평가(버튼)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">미사용</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">강의 Share <br>(버튼)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">미사용</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-blue">세션 기타정보</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">미사용</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">Q&A 세션 <br>표시 방법</th>
+                                            <td class="text-left" colspan="3">
+                                                <div class="form-group n2">
+                                                    <input type="text" name="" id="" class="form-item">
+                                                    <select name="" id="" class="form-item w-30p">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-blue">Q&A 강의 <br>표시 방법</th>
+                                            <td class="text-left" colspan="3">
+                                                <div class="form-group n2">
+                                                    <input type="text" name="" id="" class="form-item">
+                                                    <select name="" id="" class="form-item w-30p">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">eng/kor세션 <br>언어구분</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">사용(아이콘 표시 O)</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">프로그램 시간 <br>표시 타입</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">type1(시간별 구분 O)</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">프로그램 상단(정렬) <br>select box타입</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">룸별 정렬</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">날짜 타입</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">탭 UI</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">프로그램 뷰페이지 하단 해당세션 노출 여부</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">미사용</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row">프로그램 좌장정보 노출타입</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">기본</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">서브세션 구분 <br>타입 설정</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">기본</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row"></th>
+                                            <td class="text-left">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-green">좌장 표시방법 <br>(Faculty 연동시)</th>
+                                            <td class="text-left" colspan="3">
+                                                <div class="form-group n2">
+                                                    <input type="text" name="" id="" class="form-item">
+                                                    <select name="" id="" class="form-item">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-green">연자 표시방법 <br>(Faculty 연동시)</th>
+                                            <td class="text-left" colspan="3">
+                                                <div class="form-group n2">
+                                                    <input type="text" name="" id="" class="form-item">
+                                                    <select name="" id="" class="form-item w-20p">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                    <input type="text" name="" id="" class="form-item w-30p" placeholder="구분자">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-green">패컬티 노출타입 <br>(Faculty 연동시)</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">국문</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-green">패컬티 연동기능</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">Faculty 연동</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-orange">glance 표현방법</th>
+                                            <td class="text-left" colspan="3">
+                                                <div class="form-group n2">
+                                                    <input type="text" name="" id="" class="form-item">
+                                                    <select name="" id="" class="form-item w-30p">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-orange">glance 넓이설정 <br>(미입력시 120)</th>
+                                            <td class="text-left">
+                                                <input type="text" name="" id="" class="form-item" value="120">
+                                            </td>
+                                            <th scope="row" class="bg-orange">glance 높이설정 <br>(미입력시 144)</th>
+                                            <td class="text-left">
+                                                <input type="text" name="" id="" class="form-item" value="144">
+                                                <div class="help-text mt-10 text-red">* 12의 배수로 입력</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-orange">glance 시간표시 <br>타입설정</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">한시간 단위 (H - H)</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-orange">glance full <br>표현타입 설정</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">미사용</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="bg-orange">Glance 아이콘 <br>노출위치</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">타이틀옆 노출</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row" class="bg-orange">Glanec 아이콘 <br>텍스트 직접입력</th>
+                                            <td class="text-left">
+                                                <div class="form-group-wrap">
+                                                    <div class="form-group form-group-text">
+                                                        <span class="text">KOR</span> <input type="text" name="" id="" class="form-item">
+                                                    </div>
+                                                    <div class="form-group form-group-text mt-10">
+                                                        <span class="text">ENG</span> <input type="text" name="" id="" class="form-item">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CV_file</th>
+                                            <td class="text-left">
+                                                <select name="" id="" class="form-item">
+                                                    <option value="">첨부파일</option>
+                                                </select>
+                                            </td>
+                                            <th scope="row"></th>
+                                            <td class="text-left">
+                                                
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="btn-wrap text-center">
+                                <a href="#n" class="btn btn-type1 btn-line color-type3">취소</a>
+                                <button type="submit" class="btn btn-type1 color-type2"><span class="icon"><img src="/assets/image/icon/ic_btn_chk.png" alt=""></span>저장</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <button type="button" class="btn-pop-close"><span class="hide">닫기</span></button>
+        </div>
+    </div>
+</body>
+</html>

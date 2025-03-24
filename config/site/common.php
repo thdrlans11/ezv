@@ -17,11 +17,10 @@ return [
     ],
 
     'info' => [                
-        'siteName' => 'Base',
-        'name' => 'Base',
-        'email' => 'Base@Base.co.kr',
-        'url' => env('APP_URL'),
-        'ecareNum' => env('ECARE_NUMBER'),
+        'siteName' => 'EZV',
+        'name' => 'EZV',
+        'email' => 'ezv@m2community.co.kr',
+        'url' => env('APP_URL')
     ],
 
     'dayOfWeek' => [
