@@ -37,11 +37,6 @@ class RouteServiceProvider extends ServiceProvider
                         ->group(base_path('routes/api.php'));
                     break;
 
-                case 'admin' :
-                    Route::middleware(['web', 'authAdmin'])
-                        ->group(base_path('routes/admin.php'));
-                    break;
-
                 default :
                     Route::middleware(['web'])
                         ->group(base_path('routes/web.php'));

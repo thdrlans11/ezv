@@ -1,7 +1,11 @@
 <?php
-function isAdminCheck()
+function myAuth()
 {
-    return auth('web')->check() ? ( auth('admin')->check() ? true : false ) : false;
+    if( auth('admin')->check() ){
+        return 'admin';
+    }else if( auth('web')->check() ){
+        return 'web';
+    }
 }
 
 // check Url

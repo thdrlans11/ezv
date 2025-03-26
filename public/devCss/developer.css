@@ -1,0 +1,22 @@
+.main-contents{
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 120px 80px 300px;
+    background-repeat: no-repeat;
+    background-position: right 35px bottom;
+    background-image: url('../assets/image/img_intro.png');
+    background-color: #fafaff;
+}
+.main-tit{
+    font-size: 5.5rem;
+    color: #191829;    
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+.main-tit > span{
+    display: block;
+    margin-top: 10px;
+    font-weight: 100;
+    color: #000;
+}

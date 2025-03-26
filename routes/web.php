@@ -12,23 +12,43 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// 메인 페이지
+Route::controller(\App\Http\Controllers\MainController::class)->group(function() {
+    Route::get('/', 'main')->name('main');
+});
 
 // 로그인
-Route::middleware('guest')->prefix('member')->controller(\App\Http\Controllers\Member\LoginController::class)->group(function() {
-    Route::get('login', 'loginShow')->name('loginShow');
+Route::middleware('guest')->prefix('auth')->controller(\App\Http\Controllers\AuthController::class)->group(function() {
     Route::post('login', 'loginProcess')->name('loginProcess');
 });
 
-//공지사항
-Route::prefix('board/{code}')->middleware('boardCheck')->controller(\App\Http\Controllers\Board\BoardController::class)->group(function() {
-    Route::get('', 'list')->name('board.list');
-    Route::get('calendar', 'calendar')->name('board.calendar');
-    Route::get('form/{sid?}', 'form')->name('board.form');     
-    Route::post('upsert/{sid?}', 'upsert')->name('board.upsert');
-    Route::get('view/{sid}', 'view')->name('board.view');
-    Route::get('delete/{sid}', 'delete')->name('board.delete');
-    Route::post('dbChange', 'dbChange')->name('board.dbChange');
-    Route::post('preview', 'popupPreview')->name('board.popupPreview');
+// 로그아웃
+Route::middleware('auth:admin,web')->prefix('auth')->controller(\App\Http\Controllers\AuthController::class)->group(function() {
+    Route::get('logout', 'logoutProcess')->name('logoutProcess');
 });
 
-require __DIR__.'/common.php';
+// 행사관리
+Route::prefix('event')->controller(\App\Http\Controllers\Event\EventController::class)->group(function() {
+    
+    Route::middleware('auth:admin')->group(function(){
+        Route::get('/list', 'list')->name('event.list');
+        Route::get('/regist', 'form')->name('event.form');
+        Route::post('/regist', 'upsert')->name('event.upsert');
+    });
+
+    Route::middleware('auth:web', 'myEvent')->group(function(){
+        Route::get('/', 'intro')->name('event.intro');
+    });
+});
+
+Route::controller(\App\Http\Controllers\Controller::class)->prefix('common')->group(function () {       
+    /*
+     * File Download URL
+     * type => only: 단일, zip: 일괄다운(zip)
+     * tbl => 테이블
+     * sid => sid 값 enCryptString(sid) 로 암호화해서 전송
+     */
+    Route::get('fileDownload/{type}/{tbl}/{sid}', 'fileDownload')->where('type', 'only|zip')->name("download");
+    Route::post('/tinyUpload', 'tinyUpload')->name("tinyUpload");
+    Route::post('/plUpload', 'plUpload')->name("plUpload");
+});

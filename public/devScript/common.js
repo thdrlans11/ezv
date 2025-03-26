@@ -95,7 +95,7 @@ function toAllOpper(f){
 
 function file_check(file, name){
 	if( file && $("#"+name).is(":checked") == false ){
-		alert("이미 첨부되어있는 파일이 있습니다. 삭제 체크 후 변경해주세요.");
+		swalAlert("이미 첨부되어있는 파일이 있습니다.<br>삭제 체크 후 변경해주세요.", "", "warning");
 		return false;
 	}else{
 		return true;
@@ -137,7 +137,7 @@ const fileAcceptCheck = (_this, fileTxt, msg = null) => {
         
         $(_this).val('');
         $('#' + fileTxt).val('');
-        alert(msg);
+        swalAlert(msg, '', 'warning');
         return false;
     }
 
